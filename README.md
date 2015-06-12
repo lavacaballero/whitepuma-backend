@@ -24,8 +24,8 @@ Please check the next repos for more information:
 ## Requirements
 
 * Apache 2 with rewrite module
-* PHP 5.3+ with mcrypt
-* MySQL 5.5
+* PHP 5.3+ with mcrypt, curl and zlib
+* MySQL 5.5+
 
 ## Installation
 
@@ -46,6 +46,7 @@ Please check the next repos for more information:
    the ones you've set on the wallet endpoint's config file.
 
 9. Upload these scripts and configure a virtual host on Apache to serve the pages.
+   **Note:** you must configure the *AllowOverride* directive to **all** on the vhost section.
 
 10. Integrate the provided DB_TABLES.sql script.
 
